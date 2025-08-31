@@ -23,7 +23,7 @@ def upgrade() -> None:
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name VARCHAR(50) NOT NULL,
             center_id INTEGER NOT NULL,
-            FOREIGN KEY (center_id) REFERENCES center(id) ON DELETE CASCADE
+            FOREIGN KEY (center_id) REFERENCES centers(id) ON DELETE CASCADE
         );
     """)
 

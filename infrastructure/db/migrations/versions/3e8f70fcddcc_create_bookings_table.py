@@ -25,7 +25,7 @@ def upgrade() -> None:
             center_id INTEGER NOT NULL,
             technician_id INTEGER NOT NULL,
             service_id INTEGER NOT NULL,
-            customer_name TEXT NOT NULL,
+            customer_name VARCHAR(50) NOT NULL,
             booking_type TEXT CHECK(booking_type IN ('online', 'in-person')) NOT NULL,
             start_time TEXT NOT NULL,
             end_time TEXT NOT NULL,
