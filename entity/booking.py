@@ -1,7 +1,14 @@
+from enum import Enum
+
 from sqlalchemy import Column, Integer, String, Text
 from sqlalchemy.orm import relationship, declarative_base
 
 Base = declarative_base()
+
+
+class BookingType(Enum):
+    ONLINE = "online"
+    IN_PERSON = "in-person"
 
 
 class Booking(Base):
